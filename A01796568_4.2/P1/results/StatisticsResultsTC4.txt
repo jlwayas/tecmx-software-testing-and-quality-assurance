@@ -1,0 +1,11 @@
+=== Statistical Results ===
+Valid data count: 12624
+Invalid data count: 0
+
+Mean: 149.00267347908746
+Median: 147.75
+Mode(s) (frequency 36): [123.75]
+Standard deviation: 130.41441961308894
+Variance: 17007.920843018837
+
+Elapsed time (s): 0.007316
