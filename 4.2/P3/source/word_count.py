@@ -168,7 +168,7 @@ def main() -> None:
         elapsed_seconds=elapsed,
     )
 
-    print(output, end="")
+    print(type(output), end="")
     write_results(output)
 
 
