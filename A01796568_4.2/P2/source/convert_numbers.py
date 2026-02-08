@@ -60,13 +60,15 @@ def parse_int_strict(text: str, line_no: int) -> Tuple[bool, int]:
         start_idx = 1
 
     if start_idx == len(text):
-        print(f"[ERROR] Line {line_no}: sign without digits '{text}'. Skipping.")
+        print(f"[ERROR] Line {line_no}: "
+              "sign without digits '{text}'. Skipping.")
         return False, 0
 
     value = 0
     for ch in text[start_idx:]:
         if ch < "0" or ch > "9":
-            print(f"[ERROR] Line {line_no}: not an integer '{text}'. Skipping.")
+            print(f"[ERROR] Line {line_no}: "
+                  "not an integer '{text}'. Skipping.")
             return False, 0
         value = value * 10 + (ord(ch) - ord("0"))
 
