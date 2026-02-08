@@ -192,12 +192,12 @@ def write_results(output_text: str, filename: str = RESULTS_FILENAME) -> None:
 
 
 def main() -> None:
-    """Punto de entrada."""
+    """Entry Point"""
     start = time.perf_counter()
 
     if len(sys.argv) < 2:
         print("[ERROR] missing parameter: "
-              "python3 computeStatistics.py fileWithData.txt")
+              "python3 compute_statistics.py fileWithData.txt")
         sys.exit(1)
 
     filepath = sys.argv[1]
