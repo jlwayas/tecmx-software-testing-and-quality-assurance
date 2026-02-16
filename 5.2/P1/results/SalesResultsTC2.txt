@@ -1,0 +1,12 @@
+Sales Computation Results
+============================
+Processed rows:  46
+Sales subtotal:  169,478.22
+Returns subtotal:-2,909.99
+Net total cost:  166,568.23
+Elapsed time:    0.000818 seconds
+
+Warnings / Errors (execution continued):
+--------------------------------------
+- Sales row #32 negative 'Quantity' for 'Fresh blueberries' (valid return/cancellation): -35.0
+- Sales row #44 negative 'Quantity' for 'Green smoothie' (valid return/cancellation): -123.0
