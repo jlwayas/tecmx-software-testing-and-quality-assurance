@@ -1,0 +1,9 @@
+Sales Computation Results
+============================
+Processed rows:   46
+Sales subtotal:   2,481.86
+Returns subtotal: 0.00
+Net total cost:   2,481.86
+Elapsed time:     0.000843 seconds
+
+No errors detected.
