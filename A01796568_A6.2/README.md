@@ -35,6 +35,7 @@ Instalación:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Ejecución rápida (comandos de verificación)
 
@@ -44,3 +45,15 @@ pip install -r requirements.txt
 ```bash
 PYTHONPATH=src pylint src/reservation_system
 PYTHONPATH=src pylint tests
+```
+
+### 2) flake8
+```bash
+PYTHONPATH=src flake8 src tests
+```
+
+### 3) Coverage and report
+```bash
+PYTHONPATH=src coverage run -m unittest discover -s tests -p "test_*.py"
+PYTHONPATH=src coverage report -m
+```
