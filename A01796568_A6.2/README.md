@@ -1,24 +1,37 @@
-# Actividad 6.2 - Reservation System
+# Actividad 6.2 – Reservation System (Python)
 
-## Estructura
+Sistema de reservaciones con persistencia en archivos JSON y pruebas unitarias.
+Incluye CRUD de **Hoteles** y **Clientes**, así como **crear/cancelar reservaciones**.
+
+---
+
+## Objetivos de la actividad
+- Implementar un sistema con clases **Hotel**, **Customer** y **Reservation**.
+- Persistir operaciones en archivos (JSON).
+- Validar funcionamiento mediante **pruebas unitarias** con `unittest`.
+- Cumplir estándar **PEP-8**, sin hallazgos en **flake8** y sin observaciones en **pylint**.
+- Manejar **datos inválidos** en archivos sin detener la ejecución (se imprime error y se continúa).
+
+---
+
+## Estructura del proyecto
 - `src/reservation_system/`: código fuente (paquete Python)
-- `tests/`: pruebas unitarias (unittest)
-- `data/`: archivos de ejemplo (opcional para ejecución manual)
+  - `models.py`: modelos de dominio (Hotel, Customer, Reservation)
+  - `storage.py`: persistencia JSON con tolerancia a errores
+  - `services.py`: lógica de negocio (CRUD, reservar/cancelar)
+- `tests/`: pruebas unitarias (`unittest`)
+- `data/`: archivos JSON de ejemplo (opcional, para ejecución manual)
 
-> Importante: usar `PYTHONPATH=src` para que Python encuentre el paquete.
+> Importante: se usa `PYTHONPATH=src` para que Python encuentre el paquete.
 
-## Ejecutar flake 8
+---
 
+## Requisitos
+- Python 3.x
+- Paquetes: `flake8`, `pylint`, `coverage`
+
+Instalación:
 ```bash
-PYTHONPATH=src flake8 src tests
-
-## Ejecutar pylint
-
-```bash
-PYTHONPATH=src pylint src/reservation_system                            
-PYTHONPATH=src pylint tests
-
-## Ejecutar pruebas
-
-```bash
-PYTHONPATH=src python -m unittest discover -s tests -p "test_*.py"
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
