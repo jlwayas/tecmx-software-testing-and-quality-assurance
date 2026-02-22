@@ -35,3 +35,12 @@ Instalación:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+## Ejecución rápida (comandos de verificación)
+
+> Ejecuta estos comandos desde la raíz del proyecto (donde está `src/` y `tests/`).
+
+### 1) Pylint
+```bash
+PYTHONPATH=src pylint src/reservation_system
+PYTHONPATH=src pylint tests
