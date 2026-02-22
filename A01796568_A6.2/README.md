@@ -30,16 +30,21 @@ Incluye CRUD de **Hoteles** y **Clientes**, así como **crear/cancelar reservaci
 - Python 3.x
 - Paquetes: `flake8`, `pylint`, `coverage`
 
-Instalación:
+## Instalación:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Ejecución rápida (comandos de verificación)
+## Ejecutar el programa
+```bash
+PYTHONPATH=src python -m reservation_system.main
+```
 
-> Ejecuta estos comandos desde la raíz del proyecto (donde está `src/` y `tests/`).
+## Ejecución de unit tests y lints
+
+> Ejecuta los siguientes comandos desde la raíz del proyecto (donde está `src/` y `tests/`).
 
 ### 1) Pylint
 ```bash

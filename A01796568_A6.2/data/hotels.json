@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "hotel_id": "H1",
+    "name": "Ritz",
+    "city": "CDMX",
+    "total_rooms": 10,
+    "available_rooms": 10
+  }
+]

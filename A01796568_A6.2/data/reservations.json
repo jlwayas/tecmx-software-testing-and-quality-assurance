@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "reservation_id": "dfa4b67f-2b54-460f-b606-de3075b34b2c",
+    "customer_id": "C1",
+    "hotel_id": "H1",
+    "rooms_reserved": 2,
+    "status": "cancelled"
+  }
+]
